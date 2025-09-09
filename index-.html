@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kedidia Mossi — Storytelling & Impact</title>
+  <meta name="description" content="Storytelling, illustrations et SWAGGG — une esthétique quiet luxury, ancrée entre l'Afrique de l'Ouest et l'Europe." />
+  <style>
+    :root{
+      --green-kako:#2F5233;
+      --green:#6FCF97;
+      --yellow:#F2C94C;
+      --orange:#F2994A;
+      --ivory:#F9F7F2;
+      --ink:#0E0E0E;
+      --card:#334D38;
+      --card-2:#35553B;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --shadow-soft:0 6px 18px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--green-kako);
+      color:var(--ivory);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin-inline:auto;padding:24px}
+    .btn{
+      display:inline-block;padding:12px 18px;border-radius:999px;
+      background:var(--yellow);color:var(--ink);font-weight:600;
+      box-shadow:var(--shadow-soft);transition:transform .15s ease, box-shadow .15s ease
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .chip{display:inline-block;padding:.35rem .7rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;font-size:.82rem;opacity:.9}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(47,82,51,.6);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:.7rem}
+    .brand-logo{
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid rgba(255,255,255,0.6);
+    }
+    .brand-name{font-weight:800;letter-spacing:.4px}
+    .menu{display:flex;gap:18px;font-weight:600;opacity:.95}
+    @media (max-width:760px){ .menu{display:none} }
+    .hero{padding:72px 0 36px;background:var(--green-kako)}
+    .hero h1{font-size:clamp(2rem,3.5vw + 1rem,3.4rem);margin:0 0 10px}
+    .hero p{max-width:720px;opacity:.92;margin:0 0 22px;font-size:1.08rem}
+    .kw-yellow{color:var(--yellow)}
+    .kw-orange{color:var(--orange)}
+    .kw-green{color:var(--green)}
+    .grid{display:grid;gap:18px;margin:28px 0;grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){ .grid{grid-template-columns:1fr 1fr} }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} }
+    .card{
+      background:linear-gradient(180deg,var(--card),var(--card-2));
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);
+      padding:22px 20px 24px;
+      box-shadow:var(--shadow-soft);
+    }
+    .card h3{margin:0 0 8px;font-size:1.25rem}
+    .card p{margin:0 0 16px;opacity:.92}
+    .card .bullet{display:flex;align-items:center;gap:.6rem;margin:.35rem 0;opacity:.92}
+    .tick{width:10px;height:10px;border-radius:3px;background:var(--green)}
+    .cta{margin:34px 0 10px;padding:24px;border-radius:var(--radius);
+      background:linear-gradient(135deg,rgba(111,207,151,.18),rgba(242,201,76,.15));
+      border:1px dashed rgba(255,255,255,.22)}
+    footer{opacity:.75;padding:24px 0}
+    footer a{border-bottom:1px solid rgba(255,255,255,.25)}
+    .zebra{
+      background: repeating-linear-gradient(135deg, rgba(255,255,255,.12) 0 10px, rgba(0,0,0,.12) 10px 20px);
+      border-radius: var(--radius);
+      border:1px solid rgba(255,255,255,.08);
+      padding:14px 16px;
+      margin-top:8px;
+      font-weight:700;
+      letter-spacing:.3px;
+      text-align:center;
+    }
+    .zebra img{max-width:120px;display:block;margin:0 auto 8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="kedidia.jpg" alt="Photo de Kedidia Mossi" class="brand-logo">
+        <strong class="brand-name">Kedidia Mossi</strong>
+      </div>
+      <nav class="menu">
+        <a href="#services">Services</a>
+        <a href="#work">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="chip">Quiet Luxury · African Indigo Spirit</span>
+        <h1>
+          Storytelling <span class="kw-yellow">authentique</span> &amp; <span class="kw-orange">Impact</span> reporting,
+          avec une touche <span class="kw-green">durable</span>.
+        </h1>
+        <p>Nous créons des récits clairs, des visuels élégants et des micro‑campagnes efficaces pour ONG, agences de développement et marques engagées — entre Rennes et l'Afrique de l'Ouest.</p>
+        <a class="btn" href="#contact">Démarrer un projet</a>
+      </div>
+    </section>
+
+    <section id="services" class="wrap">
+      <div class="grid">
+        <article class="card">
+          <h3><span class="kw-yellow">Storytelling</span> / Impact reporting</h3>
+          <p>Structurer, mesurer et raconter l'impact avec précision et sensibilité.</p>
+          <div class="bullet"><span class="tick"></span><span>Cartes de messages &amp; arcs narratifs</span></div>
+          <div class="bullet"><span class="tick"></span><span>Rapports &amp; infographies d'impact (EN/FR)</span></div>
+          <div class="bullet"><span class="tick"></span><span>Playbooks éditoriaux &amp; GTM</span></div>
+        </article>
+        <article class="card">
+          <h3>Illustrations</h3>
+          <p>Une esthétique sobre et moderne : icônes, dessins, carrousels, couvertures et supports web.</p>
+          <div class="bullet"><span class="tick"></span><span>Packs d’icônes agriculture/WASH/biodiversité</span></div>
+          <div class="bullet"><span class="tick"></span><span>Carrousels LinkedIn &amp; kits sociaux</span></div>
+          <div class="bullet"><span class="tick"></span><span>Identités visuelles « quiet luxury »</span></div>
+        </article>
+        <article class="card">
+          <h3>SWAGGG</h3>
+          <p>Sweet Africa Groove · Grow · Glow — micro‑produits, visuels, et contenus « prêt‑à‑activer ».</p>
+          <div class="bullet"><span class="tick"></span><span>Micro‑kits WhatsApp &amp; templates</span></div>
+          <div class="bullet"><span class="tick"></span><span>Capsules audio &amp; mini‑guides EN/FR</span></div>
+          <div class="bullet"><span class="tick"></span><span>Éditions limitées &amp; drops saisonniers</span></div>
+          <div class="zebra">
+            <img src="swaggg-logo.png" alt="Logo SWAGGG">
+            <p>Signature zébrée — identité SWAGGG</p>
+          </div>
+        </article>
+      </div>
+      <div class="cta" id="work">
+        <p><strong>Exemples récents :</strong> visuels éducation O3 · récits nutrition Sahel · pack d’icônes agriculture · rapports bailleurs.</p>
+        <a class="btn" href="#contact">Demander le portfolio</a>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Construisons quelque chose de significatif</h2>
+      <p>Écrire à <a href="mailto:hello@kedidiamossi.co">hello@kedidiamossi.co</a> ou réserver un échange de 20 minutes.</p>
+      <a class="btn" href="mailto:hello@kedidiamossi.co">Envoyer un email</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> Kedidia Mossi. Crafted with care in Rennes &amp; West Africa.
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
